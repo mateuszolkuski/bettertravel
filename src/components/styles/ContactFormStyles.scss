@@ -1,0 +1,36 @@
+.form-container {
+  margin: 4rem 6rem;
+  color: #2a2a2a;
+  form {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+  input {
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    border: 1px solid #2a2a2a;
+  }
+  textarea {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    border: 1px solid #2a2a2a;
+  }
+  button {
+    display: inline;
+  }
+}
+@media screen and (max-width: 850px) {
+  .form-container {
+    margin: 4rem 2rem;
+    form {
+      padding-top: 3rem;
+      width: 90%;
+    }
+  }
+}

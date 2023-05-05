@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import ContactImg from "../assets/7.jpg";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
     return (
@@ -13,6 +14,7 @@ function Contact() {
                 title="Contact"
                 btnClass="hide"
             />
+            <ContactForm />
             <Footer />
         </>
     );
