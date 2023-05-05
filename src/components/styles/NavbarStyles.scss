@@ -66,6 +66,23 @@ button {
 .menu-icons {
 	display: none;
 }
+
+.nav-link {
+	background-color: #efefef;
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+	border-radius: 0.3rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		background-color: $hovercolor;
+		color: $maincolor;
+		border-radius: 4px;
+		transition: all 0.2s ease-in-out;
+	}
+}
 @media screen and (max-width: 850px) {
 	.NavbarItems {
 		z-index: 99;

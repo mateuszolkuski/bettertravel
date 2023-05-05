@@ -4,10 +4,23 @@ import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
-    state = { clicked: false };
+    state = { clicked: false, loggedIn: false };
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked });
     };
+
+    componentDidMount() {
+        const storedName = localStorage.getItem("name");
+        if (storedName) {
+            this.setState({ loggedIn: true});
+        }
+    }
+
+    handleLogout = () => {
+        localStorage.removeItem("name");
+        this.setState({loggedIn: false});
+    }
+
     render() {
         return (
             <nav className="NavbarItems">
@@ -30,7 +43,16 @@ class Navbar extends Component {
                             </li>
                         );
                     })}
-                    <button onClick={() => window.location.href = '/login'}>Log In</button>
+                    {this.state.loggedIn ? (
+                        <li>
+                            <span className="nav-link">{`Hi ${localStorage.getItem("name")}`}</span>
+                            <button onClick={this.handleLogout}>Log Out</button>
+                        </li>
+                    ) : (
+                        <li>
+                            <button onClick={() => window.location.href = '/login'}>Log In</button>
+                        </li>
+                    )}
                 </ul>
             </nav>
         );
