@@ -1,6 +1,8 @@
+@import "variables";
+
 .form-container {
-  margin: 4rem 6rem;
-  color: #2a2a2a;
+  margin: $desktopmargin;
+  color: $gray;
   form {
     padding-top: 3rem;
     display: flex;
@@ -13,13 +15,13 @@
     padding: 0 1rem;
     margin-bottom: 2rem;
     border-radius: .5rem;
-    border: 1px solid #2a2a2a;
+    border: 1px solid $gray;
   }
   textarea {
     padding: 1rem;
     margin-bottom: 2rem;
     border-radius: .5rem;
-    border: 1px solid #2a2a2a;
+    border: 1px solid $gray;
   }
   button {
     display: inline;
@@ -27,7 +29,7 @@
 }
 @media screen and (max-width: 850px) {
   .form-container {
-    margin: 4rem 2rem;
+    margin: $mobilemargin;
     form {
       padding-top: 3rem;
       width: 90%;

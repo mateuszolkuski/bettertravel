@@ -1,6 +1,8 @@
+@import "variables";
+
 .trip {
-  margin: 4rem 6rem;
-  color: #2a2a2a;
+  margin: $desktopmargin;
+  color: $gray;
 }
 trip {
   h1 {
@@ -27,7 +29,7 @@ trip {
 
   a {
     text-decoration: none;
-    color: rgb(15, 56, 90);
+    color: $hovercolor;
   }
 }
 .t-image {
@@ -48,7 +50,7 @@ trip {
 }
 @media screen and (max-width: 850px) {
   .trip {
-    margin: 4rem 2rem;
+    margin: $mobilemargin;
   }
   .tripcard {
     flex-direction: column;

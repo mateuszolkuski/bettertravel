@@ -27,7 +27,7 @@ const Footer = () => {
                     <a href="/contact">Have an issue?</a>
                     <a href="/contact">Some questions?</a>
                     <a href="/">Privacy Policy</a>
-                    <a href="/">GitHub</a>
+                    <a href="https://github.com/mateuszolkuski/bettertravel" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>

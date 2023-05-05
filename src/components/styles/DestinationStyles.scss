@@ -1,6 +1,7 @@
+@import "variables";
 
 .destination {
-  margin: 4rem 6rem;
+  margin: $desktopmargin;
   h1 {
     font-size: 3rem;
   }
@@ -47,7 +48,7 @@
 }
 @media screen and (max-width: 850px) {
   .destination {
-    margin: 4rem 2rem;
+    margin: $mobilemargin;
   }
   .first-des {
     display: flex;

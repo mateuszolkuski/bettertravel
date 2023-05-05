@@ -1,8 +1,7 @@
-$color_1: #222;
-$color_2: #fff;
+@import "variables";
 
 .NavbarItems {
-	background-color: white;
+	background-color: $maincolor;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -18,7 +17,7 @@ $color_2: #fff;
 	z-index: 9999;
 }
 .navbar-logo {
-	color: $color_1;
+	color: $lessblack;
 	font-size: 2rem;
 	cursor: pointer;
 }
@@ -31,7 +30,7 @@ $color_2: #fff;
 }
 .nav-links {
 	text-decoration: none;
-	color: $color_1;
+	color: $lessblack;
 	font-size: 1.2rem;
 	font-weight: 600;
 	padding: 0.7rem 1rem;
@@ -40,8 +39,8 @@ $color_2: #fff;
 		padding-right: 10px;
 	}
 	&:hover {
-		background-color: rgb(28, 99, 156);
-		color: $color_2;
+		background-color: $hovercolor;
+		color: $maincolor;
 		border-radius: 4px;
 		transition: all 0.2s ease-in-out;
 	}
@@ -58,8 +57,8 @@ button {
 	border: none;
 	cursor: pointer;
 	&:hover {
-		background-color: rgb(15, 56, 90);
-		color: $color_2;
+		background-color: $hovercolor;
+		color: $maincolor;
 		border-radius: 4px;
 		transition: all 0.2s ease-in-out;
 	}
@@ -75,7 +74,7 @@ button {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		background: #fff;
+		background: $maincolor;
 		width: 100%;
 		height: auto;
 		position: absolute;
@@ -101,7 +100,7 @@ button {
 		font-size: 1.2rem;
 		padding: 2rem 0;
 		&:hover {
-			background-color: rgb(28, 99, 156);
+			background-color: $hovercolor;
 			transition: none;
 		}
 	}
@@ -115,9 +114,9 @@ button {
 		margin: auto;
 		border-radius: 4px;
 		width: 80%;
-		background-color: rgb(15, 56, 90);
+		background-color: $hovercolor;
 		text-decoration: none;
-		color: $color_2;
+		color: $maincolor;
 		font-size: 1.2rem;
 		font-weight: 700;
 		letter-spacing: 1px;
@@ -127,7 +126,7 @@ button {
 		cursor: pointer;
 		i {
 			font-size: 1.2rem;
-			color: $color_1;
+			color: $lessblack;
 		}
 	}
 }

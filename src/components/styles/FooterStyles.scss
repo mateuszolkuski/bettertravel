@@ -1,7 +1,9 @@
+@import "variables";
+
 .footer {
-  padding: 4rem 6rem;
-  background: #000;
-  color: #fff;
+  padding: $desktopmargin;
+  background: $black;
+  color: $maincolor;
 }
 .top {
   display: flex;
@@ -10,11 +12,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   i {
-    color: #fff;
+    color: $maincolor;
     font-size: 2rem;
     margin-left: 1rem;
     &:hover {
-      color: rgb(28, 99, 156);
+      color: $hovercolor;
     }
   }
 }
@@ -34,14 +36,14 @@
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: $maincolor;
     padding: 0.4rem;
     font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 850px) {
   .footer {
-    padding: 4rem 2rem;
+    padding: $mobilemargin;
     i {
       margin: 1rem 1rem 0 0;
     }

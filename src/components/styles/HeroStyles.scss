@@ -1,5 +1,4 @@
-$color_1: #fff;
-$color_2: #222;
+@import "variables";
 
 .hero {
   width: 100%;
@@ -28,22 +27,22 @@ img {
 h1 {
   font-size: 3rem;
   font-weight: 800;
-  color: $color_1;
+  color: $maincolor;
 }
 p {
   font-size: 1rem;
-  color: $color_1;
+  color: $maincolor;
   padding: 0.5rem 0 2rem 0;
 }
 .show {
   text-decoration: none;
-  background-color: #fff;
+  background-color: $maincolor;
   padding: 1rem 2rem;
   border-radius: 5px;
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: 1.5px;
-  color: $color_2;
+  color: $lessblack;
 }
 .hide {
   display: none;
