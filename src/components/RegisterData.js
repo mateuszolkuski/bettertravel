@@ -12,7 +12,7 @@ export const RegisterData = () => {
             localStorage.setItem("email", email);
             localStorage.setItem("pass", pass);
             localStorage.setItem("name", name);
-            window.location.href = '/login';
+            window.location.href = '/';
         } else {
             alert('Please fill all the information.');
         }
