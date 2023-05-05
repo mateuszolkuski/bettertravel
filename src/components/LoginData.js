@@ -7,7 +7,17 @@ export const LoginData = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email);
+        const storedEmail = localStorage.getItem("email");
+        const storedPass = localStorage.getItem("pass");
+        if (email === storedEmail && pass === storedPass) {
+            window.location.href = "/";
+        } else {
+            alert("Wrong email or password.");
+        }
+    };
+
+    const handleRegisterClick = () => {
+        window.location.href = '/register'
     }
 
 return (
@@ -19,9 +29,8 @@ return (
         <label htmlFor="password">Password</label>
         <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="******" id="password" name="password"/>
         <button type="submit">Log In</button>
-
-        <button className="register-button" onClick={() => window.location.href = '/register'}>Don't have an account?</button>
     </form>
+            <button className="second-button" onClick={handleRegisterClick}>Don't have an account?</button>
         </div>
         </>
 )

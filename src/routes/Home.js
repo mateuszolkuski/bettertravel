@@ -15,7 +15,7 @@ function Home() {
         title="Let us inspire you"
         text="every place is beautiful, depends on how you look at it"
         buttonText="Plan"
-        url="/"
+        url="/service"
         btnClass="show"
       />
         <Destination />
