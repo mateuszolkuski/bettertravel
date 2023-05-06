@@ -9,7 +9,9 @@ export const LoginData = () => {
         e.preventDefault();
         const storedEmail = localStorage.getItem("email");
         const storedPass = localStorage.getItem("pass");
+        const storedName = localStorage.getItem("name");
         if (email === storedEmail && pass === storedPass) {
+            localStorage.setItem("name", storedName);
             window.location.href = "/";
         } else {
             alert("Wrong email or password.");

@@ -4,7 +4,8 @@ import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
-    state = { clicked: false, loggedIn: false };
+    state = { clicked: false, loggedIn: false, isLoginPage: false };
+
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked });
     };
@@ -13,6 +14,11 @@ class Navbar extends Component {
         const storedName = localStorage.getItem("name");
         if (storedName) {
             this.setState({ loggedIn: true});
+        }
+
+        const currentUrl = window.location.pathname;
+        if (currentUrl === "/login") {
+            this.setState({ isLoginPage: true });
         }
     }
 
